@@ -14,6 +14,9 @@ p {
   font-size: 1em;
 
 }
+h2, h3, h4 {
+  font-family: Ubuntu Mono, sans-serif;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -55,7 +58,28 @@ p {
   }
 }
 
-
+.experience-bar {
+  span {
+    position: absolute;
+    font-family: Ubuntu Mono, sans-serif;
+    font-size: larger;
+    color: @primaryTextColor;
+  }
+  p {
+    position: relative;
+    padding-left: 120px;
+    color: @secondaryTextColor;
+  }
+  .progress {
+    border-radius: 0;
+    background-color: @lightPrimaryColor;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .progress-bar-js{
+    //width:  75%;
+    background-color: @accentColor;
+  }
+}
 
 #banner-me {
   // TODO fix this : mixin not working when just using .jumbotron
@@ -112,6 +136,11 @@ p {
     margin-bottom: 5px;
     margin-top: 5px;
   }
+}
+
+#experience-me {
+  margin-top : 20px;
+  margin-bottom : 20px;
 }
 
 #footer-me {
