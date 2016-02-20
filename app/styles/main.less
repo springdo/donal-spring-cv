@@ -5,6 +5,15 @@
 @fa-font-path: "../fonts/font-awesome";
 
 @import "./palette.less";
+@import "../bower_components/ubuntu-fontface/ubuntu-base.less";
+
+
+p {
+  font-family: Ubuntu, sans-serif;
+  color: @secondaryTextColor;
+  font-size: 1em;
+
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -22,12 +31,31 @@
 
 .about-me {
   margin: 25px auto 0 auto;
+  hr {
+    color: @dividerColor;
+  }
 }
 
-#about-me-card {
+.about-me-card {
+  text-align: center;
+  span {
+    font-size: 2em;
+    border-radius: 50px;
+    border: 2px solid;
+    padding: 10px;
+    color: @accentColor;
+    opacity: 0.9;
+  }
 
-
+  h3 {
+    font-family: Ubuntu Mono, sans-serif;
+    color: @primaryTextColor;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
 }
+
+
 
 #banner-me {
   // TODO fix this : mixin not working when just using .jumbotron
@@ -37,7 +65,9 @@
   text-align: center;
   color: @textPrimaryColor;
   padding: 25px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  //box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
   p {
     color: @dividerColor;
   }
@@ -49,6 +79,40 @@
   }
 }
 
+#education-me {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  i {
+    //align-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: block;
+    font-size: 3.5em;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    display: block;
+    font-family: Ubuntu Mono, sans-serif;
+  }
+  span {
+    position: absolute;
+    font-family: Ubuntu Mono, sans-serif;
+    font-size: larger;
+    color: @primaryTextColor;
+  }
+  p {
+    padding-left: 50px;
+    color: @secondaryTextColor;
+
+  }
+  ol {
+    list-style-type: none;
+  }
+  li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
 
 #footer-me {
   background: @primaryColor;
