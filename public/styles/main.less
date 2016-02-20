@@ -1,0 +1,284 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@icon-font-path: "../fonts/glyphicons/";
+
+@import "../bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "../fonts/font-awesome";
+
+@import "./palette.less";
+@import "../bower_components/ubuntu-fontface/ubuntu-base.less";
+
+@border-radius-base:        0px;
+
+p {
+  font-family: Ubuntu, sans-serif;
+  color: @secondaryTextColor;
+  font-size: 1.1em;
+
+}
+h2, h3, h4 {
+  font-family: Ubuntu Mono, sans-serif;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.jumbotron {
+  margin: 20px auto 0 auto;
+  background: @primaryColor;
+  text-align: center;
+  color: @textPrimaryColor;
+}
+
+.about-me {
+  margin: 25px auto 0 auto;
+  hr {
+    color: @dividerColor;
+  }
+}
+
+.about-me-card {
+  text-align: center;
+  span {
+    font-size: 2em;
+    border-radius: 50px;
+    border: 2px solid;
+    padding: 10px;
+    color: @accentColor;
+    opacity: 0.9;
+  }
+
+  h3 {
+    font-family: Ubuntu Mono, sans-serif;
+    color: @primaryTextColor;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+
+.experience-bar {
+  padding-bottom: 7px;
+  span {
+    //padding-top: 15px;
+    position: absolute;
+    font-family: Ubuntu Mono, sans-serif;
+    font-size: larger;
+    color: @primaryTextColor;
+  }
+  p {
+    position: relative;
+    padding-left: 120px;
+    color: @secondaryTextColor;
+  }
+  .progress {
+    border-radius: 0;
+    background-color: @lightPrimaryColor;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .progress-bar-js{
+    //width:  75%;
+    background-color: @accentColor;
+  }
+}
+
+.panel-default-me {
+  //border-color: @accentColor;
+  color: #333333;
+  //background-color: #ffffff;
+  border-color: #dddddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.panel-heading {
+  background-color: @lightPrimaryColor;
+//  background-color: #FBFBFB;
+}
+.panel-body {
+  background-color: white;
+}
+
+#accordion {
+  a:link  {
+    .h4;
+    text-decoration: none;
+  }
+}
+
+#banner-me {
+  // TODO fix this : mixin not working when just using .jumbotron
+  //margin: 20px auto 0 auto;
+  margin: 0 auto 0 auto;
+  background: @primaryColor;
+  text-align: center;
+  color: @textPrimaryColor;
+  padding: 25px;
+  //box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  p {
+    color: @dividerColor;
+  }
+  img {
+    border-radius : 50%;
+    //border-color: @accentColor;
+    //border: 3px solid @accentColor;
+    border: 3px solid;
+  }
+}
+
+#education-me {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 20px 0px 20px 0px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  i {
+    //align-content: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    display: block;
+    font-size: 3.5em;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    display: block;
+    font-family: Ubuntu Mono, sans-serif;
+  }
+  span {
+    position: absolute;
+    font-family: Ubuntu Mono, sans-serif;
+    font-size: larger;
+    color: @primaryTextColor;
+  }
+  p {
+    padding-left: 50px;
+    color: @secondaryTextColor;
+
+  }
+  ol {
+    list-style-type: none;
+  }
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+
+#experience-me {
+  margin-top : 20px;
+  margin-bottom : 20px;
+  h2 {
+    padding : 10px;
+    //text-align: center;
+  }
+}
+
+#contact-me {
+  // tutorial found https://scotch.io/tutorials/google-material-design-input-boxes-in-css3#update!-no-js-necessary!
+  //margin-top: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 30px;
+  .group        {
+    position:relative;
+    margin-bottom:20px;
+  }
+  label {
+    // turn this on to make the label jump!
+    // but is buggy
+    position: absolute;
+    font-family: Ubuntu Mono, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    //padding: 10px 0px 10px 0px;
+  }
+  input,textarea {
+    font-size:1em;
+    // T R B L
+    padding:  15px 5px 15px 5px;
+    display:block;
+    width:85%;
+    border:none;
+    border-bottom:1px solid #757575;
+    font-size:16px;
+
+  }
+  input,textarea:focus     {
+    outline:none;
+  }
+
+  input:focus ~ label, input:valid ~ label     {
+    top:-5px;
+    font-size:14px;
+    color: @primaryColor
+  }
+  textarea:focus ~ label, input:valid ~ label     {
+    top:-5px;
+    font-size:14px;
+    color: @primaryColor
+  }
+
+  .bar  {
+    position:relative;
+    display:block;
+    width:85%;
+  }
+
+  .bar:before, .bar:after   {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:@primaryColor;
+    transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%;
+  }
+
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+    width:50%;
+  }
+
+}
+
+#location-me {
+  display: block;
+  height : 400px;
+  h2 {
+    //text-align: center;
+  }
+}
+
+#social-me {
+  text-align: center;
+  h2 {
+    text-align: left;
+    padding: 20px;
+  }
+  span {
+    align-content: center;
+    font-size: 2em;
+    border-radius: 4%;
+    border: 2px solid;
+    padding: 10px;
+    color: @primaryColor;
+  }
+}
+#footer-me {
+  background: @primaryColor;
+  text-align: center;
+  color: @dividerColor;
+}
