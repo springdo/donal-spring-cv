@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 
   // configurable paths
   var yeomanConfig = {
-    app: require('./bower.json').appPath || 'app',
+    app: require('./bower.json').appPath || 'public',
     dist: 'dist'
   };
 
@@ -206,7 +206,7 @@ module.exports = function (grunt) {
         // Point to the files that should be updated when
         // you run `grunt wiredep`
         src: [
-          './app/index.html'
+          './public/index.html'
         ],
         options: {
           // See wiredep's configuration documentation for the options
