@@ -4,13 +4,41 @@
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
+@import "./palette.less";
+
 .browsehappy {
-  margin: 0.2em 0; 
-  background: #ccc; 
-  color: #000; 
-  padding: 0.2em 0; 
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 .jumbotron {
-  margin: 50px auto 0 auto;
+  margin: 20px auto 0 auto;
+  background: @primaryColor;
+  text-align: center;
+  color: @textPrimaryColor;
+}
+
+#banner-me {
+  // TODO fix this : mixin not working when just using .jumbotron
+  margin: 20px auto 0 auto;
+  background: @primaryColor;
+  text-align: center;
+  color: @textPrimaryColor;
+  p {
+    color: @dividerColor;
+  }
+  img {
+    border-radius : 50%;
+    //border-color: @accentColor;
+    border: 3px solid @accentColor;
+  }
+}
+
+#footer-me {
+  background: @primaryColor;
+  text-align: center;
+  color: @dividerColor;
+
 }
