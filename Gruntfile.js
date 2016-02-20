@@ -12,6 +12,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
   // show elapsed time at the end
   require('time-grunt')(grunt);
+  grunt.loadNpmTasks('grunt-wiredep');
 
   // configurable paths
   var yeomanConfig = {
@@ -200,6 +201,19 @@ module.exports = function (grunt) {
         }
       }
     },
+    wiredep: {
+      target: {
+        // Point to the files that should be updated when
+        // you run `grunt wiredep`
+        src: [
+          './app/index.html'
+        ],
+        options: {
+          // See wiredep's configuration documentation for the options
+          // https://github.com/taptapship/wiredep#configuration
+        }
+      }
+    },
     htmlmin: {
       dist: {
         options: {
@@ -271,6 +285,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'coffee',
+      'wiredep',
       'less',
       'copy:server',
       'connect:livereload',
