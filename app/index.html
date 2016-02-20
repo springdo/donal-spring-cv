@@ -113,7 +113,8 @@
                     Post Office
                   </h4>
                 </a>
-              </div>              <div id="collapse3" class="panel-collapse collapse">
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
                 <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -174,32 +175,66 @@
       </div>
 
 
-      <div class="row" id="contact">
-        <div class="col-md-12">
-          <h2> <i class="glyphicon glyphicon-send"></i> Get in touch ...</h2>
-        </div>
-      </div>
 
-      <div class="row" id="social-me">
+      <div class="row" id="contact-me">
         <div class="col-md-12">
-          <h2>Connect with me ...</h2>
-          <div class="col-md-4 col-sm-4">
+          <h2><i class="glyphicon glyphicon-send"></i> Contact me </h2>
+          <form id="contactme" action="#">
+            <div class="col-md-6 col-sm-6" id="form-block-one">
+              <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+              </div>
+              <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+              </div>
+              <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Phone</label>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6" id="form-block-two">
+              <div class="group">
+                <textarea name="message" required="required" maxlength="1000" rows="5"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Message</label>
+                <button form="contactme" value="Submit" onclick="onSubmitForm(this);">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-12" id="social-me">
+            <h2><i class="glyphicon glyphicon-link"></i> Connect </h2>
+            <div class="col-md-4 col-sm-4">
             <span>
               <i class="fa fa-github"></i>
             </span>
-          </div>
-          <div class="col-md-4 col-sm-4">
+            </div>
+            <div class="col-md-4 col-sm-4">
             <span>
-              <i class="fa fa-linkedin-square"></i>
+              <i class="fa fa-linkedin"></i>
             </span>
-          </div>
-          <div class="col-md-4 col-sm-4">
+            </div>
+            <div class="col-md-4 col-sm-4">
             <span>
               <i class="fa fa-twitter"></i>
             </span>
+            </div>
           </div>
         </div>
+
       </div>
+
 
       <div class="row" id="location-me">
         <div class="col-md-12">
