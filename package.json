@@ -35,5 +35,8 @@
     "express": "^4.13.4",
     "express-json": "^1.0.0",
     "nodemailer": "^2.1.0"
+  },
+  "scripts":{
+    "start" : "node app.js"
   }
 }
