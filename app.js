@@ -43,7 +43,7 @@ app.post('/contact',function(req,res,next){
     from: 'Donal Spring <donalspring.cv@gmail.com>', // sender address
     to: b.email, // list of receivers
     subject: '[NO-REPLY] Thank you for your interest!', // Subject line
-    text: 'Hi\n \n This is an automated reply but don\'t let that put you off!\n\nI\'ll be in touch soon!\n\nMany thanks\n\nWilliam Lacy'
+    text: 'Hi\n \n This is an automated reply but don\'t let that put you off!\n\nI\'ll be in touch soon!\n\nMany thanks\n\nDonal Spring'
   };
 
   transporter.sendMail(mailOptionsRequestNotification, function(error, info){
