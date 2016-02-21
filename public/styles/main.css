@@ -8310,15 +8310,30 @@ h4 {
   padding: 30px;
   /* active state */
 }
+#contact-me h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#contact-me #form-response {
+  font-family: Ubuntu, sans-serif;
+  margin-top: 15px;
+  margin-right: 5px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-bottom: solid 1px;
+  border-bottom-color: white;
+}
 #contact-me .group {
   position: relative;
   margin-bottom: 20px;
 }
 #contact-me .button-me {
-  margin: 15px;
-  margin-right: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10%;
   float: right;
-  width: 30%;
   border-color: #512da8;
   background: #512da8;
   font-family: Ubuntu Mono, sans-serif;
@@ -8390,9 +8405,6 @@ h4 {
   margin-top: 25px;
   margin-bottom: 15px;
 }
-#social-me {
-  text-align: center;
-}
 #social-me h2 {
   text-align: left;
   padding: 20px;
@@ -8404,7 +8416,8 @@ h4 {
   color: #512da8;
 }
 #social-me span {
-  margin: 5px;
+  margin: 100px 30px 10px 30px;
+  width: 33%;
   font-size: 2em;
   border-radius: 4%;
   border: 2px solid;
