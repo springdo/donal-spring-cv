@@ -8296,6 +8296,9 @@ h4 {
 #experience-me h2 {
   padding: 10px;
 }
+#experience-me li {
+  list-style-type: square;
+}
 #contact-me {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 30px;
