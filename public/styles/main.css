@@ -8170,20 +8170,20 @@ h4 {
 }
 .about-me-card {
   text-align: center;
+  margin-bottom: 20px;
 }
 .about-me-card span {
-  font-size: 2em;
+  font-size: 2.8em;
   border-radius: 50px;
   border: 2px solid;
-  padding: 10px;
+  padding: 20px;
   color: #512da8;
-  opacity: 0.9;
 }
 .about-me-card h3 {
   font-family: Ubuntu Mono, sans-serif;
   color: #212121;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
 .experience-bar {
   padding-bottom: 7px;
@@ -8296,8 +8296,14 @@ h4 {
 #experience-me h2 {
   padding: 10px;
 }
+#experience-me h4 {
+  font-size: 18px;
+}
 #experience-me li {
+  font-size: 15px;
   list-style-type: square;
+  padding: 8px;
+  font-family: Ubuntu, sans-serif;
 }
 #contact-me {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -8381,6 +8387,8 @@ h4 {
 #location-me {
   display: block;
   height: 400px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 #social-me {
   text-align: center;
