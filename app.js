@@ -12,9 +12,22 @@ app.use('/bower_components',express.static('bower_components'));
 
 
 var nodemailer = require('nodemailer');
+var account = process.env.ADMIN_EMAIL_ADDRESS || 'test@gmail.com';
+var key = process.env.ADMIN_EMAIL_PASS  || '12354';
+var smtpConfig = {
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true, // use SSL
+  auth: {
+    user: account,
+    pass: key
+  }
+};
 
 // create reusable transporter object using the default SMTP transport
-var transporter = nodemailer.createTransport('smtps://'+ process.env.ADMIN_EMAIL_ADDRESS + ':' + process.env.ADMIN_EMAIL_PASS +'@' + (process.env.SMTP_SERVER || 'smtp.gmail.com'));
+//var transporter = nodemailer.createTransport('smtps://'+ process.env.ADMIN_EMAIL_ADDRESS + ':' + process.env.ADMIN_EMAIL_PASS +'@' + (process.env.SMTP_SERVER || 'smtp.gmail.com'));
+var transporter = nodemailer.createTransport(smtpConfig);
+
 
 app.post('/contact',function(req,res,next){
   var b = req.body;

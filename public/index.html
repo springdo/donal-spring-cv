@@ -215,22 +215,22 @@
       <div class="row" id="contact-me">
         <div class="col-md-12">
           <h2><i class="glyphicon glyphicon-send"></i> Contact </h2>
-          <form id="contactme" action="/contact" method="post">
+          <!--<form id="contactme" action="#" method='#'>-->
             <div class="col-md-6 col-sm-6" id="form-block-one">
               <div class="group">
-                <input type="text" required name="name">
+                <input type="text" id="form-name" required name="name">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Name</label>
               </div>
               <div class="group">
-                <input type="text" required name="email">
+                <input type="text" id="form-email" required name="email">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Email</label>
               </div>
               <div class="group">
-                <input type="text" required name="phone">
+                <input type="text" id="form-phone" required name="phone">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Phone</label>
@@ -239,14 +239,15 @@
 
             <div class="col-md-6 col-sm-6" id="form-block-two">
               <div class="group">
-                <textarea name="message" required="required" maxlength="1000" rows="5" cols="60"></textarea>
+                <textarea name="message" id="form-msg" required="required" maxlength="1000" rows="5" cols="60"></textarea>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Message</label>
               </div>
-              <button form="contactme" value="submit" class="btn btn-success button-me" >Submit</button>
+              <div id="form-response"></div>
+              <button onclick="sendForm();" class="btn btn-success button-me" >Submit</button>
             </div>
-          </form>
+          <!--</form>-->
         </div>
         <div class="row">
           <div class="col-md-12" id="social-me">
