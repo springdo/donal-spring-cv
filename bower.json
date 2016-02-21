@@ -2,11 +2,10 @@
   "name": "donal-spring-cv",
   "version": "0.0.1",
   "dependencies": {
+    "jquery": "~1.9.1",
     "bootstrap": "~3.0.0",
     "font-awesome": "~4.0.0",
     "modernizr": "~2.6.2",
-    "jquery": "~1.9.1",
-    "angular": "~1.5.0",
     "ubuntu-fontface": "~0.1.10"
   },
   "devDependencies": {
